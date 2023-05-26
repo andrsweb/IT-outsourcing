@@ -1,10 +1,19 @@
 .contact {
-	padding: 185px 0 455px;
+	padding: 20px 0;
+
+	@media all and (min-width: $xxl) {
+		padding: 210px 0 455px;
+	}
 
 	&-wrapper {
 		display: flex;
 		align-items: center;
 		position: relative;
+		flex-direction: column;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+		}
 	}
 
 	&-img {
@@ -21,7 +30,11 @@
 		font-size: 20px;
 		line-height: 30px;
 		color: $gray;
-		margin-bottom: 46px;
+		margin-bottom: 25px;
+
+		@media all and (min-width: $xxl) {
+			margin-bottom: 46px;
+		}
 
 		a {
 			color: $blue;
@@ -29,23 +42,52 @@
 	}
 
 	&-left {
-		width: 50%;
-		padding: 220px 0 50px 50px;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		order: 2;
+
+		@media all and (min-width: $md) {
+			order: 1;
+			width: 50%;
+		}
+
+		@media all and (min-width: $lg) {
+			padding: 220px 0 50px 50px;
+		}
+
+		@media all and (min-width: $xxl) {
+			justify-content: flex-start;
+		}
 	}
 
 	&-right {
-		width: 50%;
-		padding: 0 100px;
+		width: 100%;
+		order: 1;
+
+		@media all and (min-width: $md) {
+			width: 50%;
+			order: 2;
+		}
+
+		@media all and (min-width: $xxl) {
+			padding: 0 100px;
+		}
 
 		h2 {
 			font-family: 'Plus Jakarta Sans';
 			font-style: normal;
 			font-weight: $fw-semibold;
-			font-size: 48px;
-			line-height: 60px;
+			font-size: 30px;
+			line-height: 30px;
 			letter-spacing: -0.02em;
 			color: $black;
 			margin-bottom: 24px;
+
+			@media all and (min-width: $lg) {
+				font-size: 48px;
+				line-height: 60px;
+			}
 		}
 	}
 
@@ -57,10 +99,18 @@
 	.input-wrapper {
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 24px;
+		margin-bottom: 10px;
 
-		&:last-child {
-			margin-bottom: 32px;
+		&::last-child {
+			margin-bottom: 25px;
+		}
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 24px;
+
+			&:last-child {
+				margin-bottom: 32px;
+			}
 		}
 	}
 
@@ -95,10 +145,5 @@
 			line-height: 24px;
 			color: $gray;
 		}
-	}
-
-	.mask-input {
-		width: 100%;
-		padding-left: 75px;
 	}
 }
