@@ -13,6 +13,20 @@
 		padding: 15px 0;
 		background-color: $white;
 		box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.349);
+
+		.header-logo-img {
+			animation: rotate infinite linear 7s;
+
+			@keyframes rotate {
+				0% {
+					transform: rotate( 0deg );
+				}
+
+				100% {
+					transform: rotate( 360deg );
+				}
+			}
+		}
 	}
 
 	&-wrapper {
@@ -28,12 +42,6 @@
 		&-img {
 			margin-right: 6px;
 			transition: transform ease $tr;
-		}
-
-		&:hover {
-			.header-logo-img {
-				transform: rotate( 360deg );
-			}
 		}
 	}
 
@@ -70,6 +78,18 @@
 
 	&-social-link {
 		margin-right: 19px;
+		transition: transform ease $tr,
+			opacity  ease $tr;
+
+		&:first-child:hover {
+			transform-origin: left bottom;
+			transform: rotate( -3deg );
+		}
+
+		&:last-child:hover {
+			transform-origin: right bottom;
+			transform: rotate( 3deg );
+		}
 
 		&:last-child {
 			margin-right: 0;
