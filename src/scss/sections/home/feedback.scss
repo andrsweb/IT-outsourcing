@@ -1,5 +1,9 @@
 .feedbacks {
-	padding: 110px 0 100px;
+	padding: 50px 0;
+
+	@media all and (min-width: $xl) {
+		padding: 110px 0 100px;
+	}
 
 	.container {
 		max-width: 1228px;
@@ -14,7 +18,11 @@
 		text-align: center;
 		text-transform: capitalize;
 		color: $black;
-		margin-bottom: 49px;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 49px;
+		}
 	}
 
 	&-balls {
@@ -28,27 +36,41 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -20px;
-		padding: 64px 0;
+		padding: 20px 0;
 		position: relative;
 
-		&::before {
-			content: "";
-			position: absolute;
-			left: 50%;
-			top: 0;
-			transform: translateX( -50% );
-			width: 72%;
-			display: block;
-			height: 100%;
-			background-color: $blue;
-			z-index: -1;
-			border-radius: 50px;
+		@media all and (min-width: $lg) {
+			padding: 64px 0;
+
+			&::before {
+				content: "";
+				position: absolute;
+				left: 50%;
+				top: 0;
+				transform: translateX( -50% );
+				width: 72%;
+				display: block;
+				height: 100%;
+				background-color: $blue;
+				z-index: -1;
+				border-radius: 50px;
+			}
 		}
 	}
 
 	&-item {
 		padding: 0 20px;
-		width: calc( 100% / 3 );
+		width: calc( 100% / 1 );
+		margin-bottom: 20px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media all and (min-width: $lg) {
+			width: calc( 100% / 3 );
+			margin-bottom: 0;
+		}
 
 		&-inner {
 			display: flex;
@@ -57,6 +79,7 @@
 			background-color: $white;
 			box-shadow: 0px 42.4441px 61.3082px rgba(0, 0, 0, 0.08);
 			padding: 28px;
+			height: 100%;
 		}
 	}
 
