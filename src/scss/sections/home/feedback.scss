@@ -1,0 +1,116 @@
+.feedbacks {
+	padding: 110px 0 100px;
+
+	.container {
+		max-width: 1228px;
+	}
+
+	h2 {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-medium;
+		font-size: 42px;
+		line-height: 48px;
+		text-align: center;
+		text-transform: capitalize;
+		color: $black;
+		margin-bottom: 49px;
+	}
+
+	&-balls {
+		position: absolute;
+		right: -27%;
+		top: -51%;
+	}
+
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -20px;
+		padding: 64px 0;
+		position: relative;
+
+		&::before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 0;
+			transform: translateX( -50% );
+			width: 72%;
+			display: block;
+			height: 100%;
+			background-color: $blue;
+			z-index: -1;
+			border-radius: 50px;
+		}
+	}
+
+	&-item {
+		padding: 0 20px;
+		width: calc( 100% / 3 );
+
+		&-inner {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: $white;
+			box-shadow: 0px 42.4441px 61.3082px rgba(0, 0, 0, 0.08);
+			padding: 28px;
+		}
+	}
+
+	&-text {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 18px;
+		line-height: 28px;
+		color: $black;
+		margin-bottom: 16px;
+	}
+
+	&-rate {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		margin-bottom: 18px;
+
+		picture {
+			margin-right: 4px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&-person {
+		width: 100%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+
+		&-name {
+			font-family: $ff;
+			font-style: normal;
+			font-weight: $fw-bold;
+			font-size: 16px;
+			line-height: 28px;
+			color: $black;
+		}
+
+		&-job {
+			font-family: $ff-inter;
+			font-style: normal;
+			font-weight: $fw-regular;
+			font-size: 14px;
+			line-height: 17px;
+			letter-spacing: 0.44px;
+			color: $black;
+		}
+	}
+
+	&-photo {
+		margin-right: 16px;
+	}
+}

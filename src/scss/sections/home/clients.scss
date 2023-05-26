@@ -1,8 +1,18 @@
 .clients {
 	padding: 100px 0 100px;
 
+	&-star {
+		position: absolute;
+		right: -85%;
+		top: -152%;
+		z-index: -1;
+		transform: rotate( 28deg);
+	}
+
 	.container {
 		max-width: 1157px;
+		position: relative;
+		z-index: 1;
 
 		.underline {
 			font-weight: $fw-medium;
