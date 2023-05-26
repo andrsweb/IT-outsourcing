@@ -1,11 +1,20 @@
 .footer {
 	background-color: $blue;
-	padding: 61px 0 112px;
+	padding: 50px 0;
 	position: relative;
+
+	@media all and (min-width: $xl) {
+		padding: 61px 0 112px;
+	}
 
 	&-wrapper {
 		display: flex;
 		position: relative;
+		flex-direction: column;
+
+		@media all and (min-width: $md) {
+			flex-direction: row;
+		}
 	}
 
 	&-img {
@@ -24,14 +33,29 @@
 	&-col {
 		display: flex;
 		flex-direction: column;
-		width: 33.333%;
+		width: 100%;
+		align-items: center;
+
+		@media all and (min-width: $md) {
+			width: 33.333%;
+			align-items: flex-start;
+		}
 
 		&:last-child {
-			align-items: flex-end;
+			@media all and (min-width: $md) {
+				align-items: flex-end;
+			}
 		}
 
 		&.col-center {
-			align-items: center;
+			order: 1;
+			margin-top: 30px;
+
+			@media all and (min-width: $md) {
+				align-items: center;
+				order: 0;
+				margin-top: 0;
+			}
 		}
 	}
 
@@ -62,6 +86,11 @@
 		letter-spacing: 0.7px;
 		color: $light;
 		margin-top: 26px;
+		text-align: center;
+
+		@media all and (min-width: $md) {
+			text-align: left;
+		}
 	}
 
 	&-address {
@@ -103,6 +132,11 @@
 
 	&-links {
 		display: flex;
+		margin-bottom: 20px;
+
+		@media all and (min-width: $md) {
+			margin-bottom: 0;
+		}
 	}
 
 	&-link {
