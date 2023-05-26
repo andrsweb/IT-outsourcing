@@ -1,5 +1,9 @@
 .clients {
-	padding: 100px 0 100px;
+	padding: 50px 0;
+
+	@media all and (min-width: $xl) {
+		padding: 100px 0 100px;
+	}
 
 	&-star {
 		position: absolute;
@@ -32,12 +36,23 @@
 
 	&-brand {
 		padding: 0 8px;
-		width: calc( 100% / 4 );
-		
+		width: calc( 100% / 1 );
 		margin-bottom: 16px;
 
-		&:nth-child( n + 5 ) {
-			margin-bottom: 0;
+		@media all and (min-width: $sm) {
+			width: calc( 100% / 2 );
+
+			&:nth-child( n + 7 ) {
+				margin-bottom: 0;
+			}
+		}
+
+		@media all and (min-width: $lg) {
+			width: calc( 100% / 4 );
+
+			&:nth-child( n + 5 ) {
+				margin-bottom: 0;
+			}
 		}
 
 		&-inner {
@@ -46,6 +61,7 @@
 			align-items: center;
 			height: 180px;
 			border: 2px solid #F6F6F6;
+			background-color: $white;
 		}
 	}
 }
