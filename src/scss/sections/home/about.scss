@@ -1,0 +1,61 @@
+.about {
+	padding: 225px 0 100px;
+
+	.container {
+		max-width: 1300px;
+	}
+
+	h2 {
+		font-family: $ff-inter;
+		font-weight: $fw-regular;
+		font-size: 32px;
+		line-height: 24px;
+		color: $black;
+		margin-bottom: 69px;
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+
+	&-balls {
+		position: absolute;
+		left: -23%;
+		top: 22%;
+	}
+
+	&-rect {
+		position: absolute;
+		right: -47%;
+		top: -13%;
+	}
+
+	&-text {
+		width: 50%;
+	}
+
+	&-desc {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 16px;
+		line-height: 24px;
+		color: $black;
+		margin-bottom: 46px;
+		padding-right: 10px;
+		padding-left: 10px;
+
+		&:last-child {
+			max-width: 518px;
+			margin-bottom: 0;
+		}
+	}
+
+	&-img {
+		width: 50%;
+		display: flex;
+		justify-content: flex-end;
+	}
+}
