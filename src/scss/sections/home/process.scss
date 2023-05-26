@@ -1,0 +1,126 @@
+.process {
+	padding: 240px 0 200px;
+	position: relative;
+
+	.container {
+		max-width: 13s60px;
+	}
+
+	h2 {
+		font-family: $ff-inter;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 32px;
+		line-height: 39px;
+		color: $black;
+		margin-bottom: 44px;
+		text-align: center;
+	}
+
+	&-subtitle {
+		font-family: $ff-inter;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 16px;
+		line-height: 19px;
+		text-align: center;
+		color: $black;
+		margin-bottom: 80px;
+		padding: 0 25%;
+	}
+
+	&-items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	&-star {
+		position: absolute;
+		left: 37%;
+		bottom: 22%;
+		z-index: -1;
+		transform: rotate(118deg);
+	}
+
+	&-item {
+		width: calc( 100% / 2 );
+		margin-bottom: 89px;
+		border-radius: 50px;
+		max-width: 549px;
+
+		&:nth-child( n + 3 ) {
+			margin-bottom: 0;
+		}
+
+		&:first-child {
+			background-color: $yellow;
+			margin-right: 131px;
+		}
+
+		&:nth-child(2) {
+			background-color: $blue;
+		}
+
+		&:nth-child(3) {
+			background-color: $blue;
+			margin-right: 131px;
+		}
+
+		&:last-child {
+			margin-right: 0;
+			background-color: $yellow;
+		}
+
+		&-wrapper {
+			&.first {
+				padding: 23px 1px 1px 19px;
+			}
+
+			&.second {
+				padding: 23px 19px 1px 1px;
+			}
+
+			&.third {
+				padding: 1px 1px 23px 19px;
+			}
+
+			&.fourth {
+				padding: 1px 19px 23px 1px;
+			}
+			
+		}
+	}
+
+	&-inner {
+		display: flex;
+		height: 219px;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		padding: 0 40px;
+		background-color: $white;
+		border-radius: 50px;
+	}
+
+	&-title, &-text {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-bold;
+		font-size: 18px;
+		line-height: 28px;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		color: #18181B;
+	}
+
+	&-img {
+		margin-bottom: 25px;
+	}
+
+	&-text {
+		font-size: 18px;
+		font-weight: $fw-medium;
+	}
+}
