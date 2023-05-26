@@ -38,7 +38,7 @@
 		align-items: center;
 		justify-content: space-between;
 
-		@media all and (min-width: $md) {
+		@media all and (min-width: $lg) {
 			justify-content: flex-start;
 		}
 	}
@@ -47,7 +47,11 @@
 		display: flex;
 		align-items: center;
 
-		@media all and (min-width: $md) {
+		@media all and (min-width: $lg) {
+			margin-right: 40px;
+		}
+
+		@media all and (min-width: $xxl) {
 			margin-right: 186px;
 		}
 
@@ -60,6 +64,10 @@
 	&-ui-wrapper {
 		width: 100%;
 		display: none;
+
+		@media all and (min-width: $lg) {
+			display: flex;
+		}
 
 		&.opened {
 			animation: anim forwards ease 0.5s;
@@ -78,6 +86,7 @@
 				}
 				
 			}
+
 			width: 250px;
 			height: 100%;
 			display: flex;
@@ -117,7 +126,18 @@
 	&-nav {
 		display: flex;
 		align-items: center;
-		margin-right: 206px;
+		
+		@media all and (min-width: $lg) {
+			margin-right: 50px;
+		}
+
+		@media all and (min-width: $xl) {
+			margin-right: 100px;
+		}
+
+		@media all and (min-width: $xxl) {
+			margin-right: 206px;
+		}
 
 		&-link {
 			font-family: $ff;

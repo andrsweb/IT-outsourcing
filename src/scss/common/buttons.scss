@@ -37,7 +37,7 @@
     cursor: pointer;
 	z-index: 100;
     
-    @media all and (min-width: $md) {
+    @media all and (min-width: $lg) {
 		display: none;
 	}
 
