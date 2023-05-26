@@ -86,13 +86,11 @@
 			opacity  ease $tr;
 
 		&:first-child:hover {
-			transform-origin: left bottom;
-			transform: rotate( -3deg );
+			transform: translateX( -5px );
 		}
 
 		&:last-child:hover {
-			transform-origin: right bottom;
-			transform: rotate( 3deg );
+			transform: translateX( 5px );
 		}
 
 		&:last-child {
