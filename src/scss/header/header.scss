@@ -36,16 +36,82 @@
 	&-wrapper {
 		display: flex;
 		align-items: center;
+		justify-content: space-between;
+
+		@media all and (min-width: $md) {
+			justify-content: flex-start;
+		}
 	}
 
 	&-logo {
 		display: flex;
 		align-items: center;
-		margin-right: 186px;
+
+		@media all and (min-width: $md) {
+			margin-right: 186px;
+		}
 
 		&-img {
 			margin-right: 6px;
 			transition: transform ease $tr;
+		}
+	}
+
+	&-ui-wrapper {
+		// display: flex;
+		width: 100%;
+		display: none;
+
+		&.opened {
+			animation: anim forwards ease 0.5s;
+			overflow-y: auto;
+			margin: auto 0;
+
+			@keyframes anim {
+				0% {
+					display: block;
+					transform: translateY(-100%);
+				}
+
+				100% {
+					display: block;
+					transform: translateY(0);
+				}
+				
+			}
+			width: 250px;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			position: fixed;
+			right: 0;
+			top: 0;
+			z-index: 100;
+			background-color: $white;
+			padding: 70px 0;
+			box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.336);
+
+			nav {
+				display: flex;
+				flex-direction: column;
+				margin: 0;
+				margin-bottom: 30px;
+			}
+
+			.header-nav-link {
+				margin-right: 0;
+				margin-bottom: 15px;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			.header-social-links {
+				margin-right: 0;
+				margin-bottom: 30px;
+			}
 		}
 	}
 
