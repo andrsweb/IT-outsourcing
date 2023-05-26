@@ -18,10 +18,15 @@
 	}
 
 	&-img {
+		display: none;
 		position: absolute;
-		left: 7%;
-		top: -366%;
+		left: 10%;
+		top: -335%;
 		z-index: -1;
+
+		@media all and (min-width: $xxl) {
+			display: block;
+		}
 	}
 
 	&-logo {

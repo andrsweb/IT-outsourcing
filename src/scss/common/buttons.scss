@@ -55,6 +55,7 @@
 
             &::after, &::before {
                 content: "";
+				transition: transform ease $tr;
                 width: 100%;
                 position: absolute;
                 top: 12px;

@@ -86,9 +86,13 @@
 				0% {
 					display: block;
 					transform: translateY(-100%);
+					opacity: 0;
+					scale: 0;
 				}
 
 				100% {
+					scale: 1;
+					opacity: 1;
 					display: block;
 					transform: translateY(0);
 				}
