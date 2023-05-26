@@ -25,6 +25,12 @@ h1, .h1 {
 	}
 
 	@media all and (min-width: $lg) {
+		font-size: 55px;
+		line-height: 50px;
+		text-align: left;
+	}
+
+	@media all and (min-width: $xl) {
 		font-size: 72px;
 		line-height: 91px;
 		text-align: left;
@@ -35,7 +41,7 @@ h2, .h2 {
 	font-family: $ff;
 	font-style: normal;
 	font-weight: $fw-regular;
-	font-size: 38px;
+	font-size: 30px;
 	line-height: 24px;
 	color: $black;
 	position: relative;
@@ -54,7 +60,8 @@ h2, .h2 {
 	}
 
 	@media all and (min-width: $lg) {
-		font-size: 38px
+		font-size: 38px;
+		line-height: 24px;
 	}
 }
 

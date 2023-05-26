@@ -24,7 +24,7 @@
 		top: -335%;
 		z-index: -1;
 
-		@media all and (min-width: $lg) {
+		@media all and (min-width: $xl) {
 			display: block;
 		}
 	}
@@ -96,7 +96,7 @@
 		top: 14%;
 		z-index: -1;
 
-		@media all and (min-width: $lg) {
+		@media all and (min-width: $xl) {
 			display: block;
 		}
 	}
@@ -112,10 +112,15 @@
 		margin-top: 30px;
 
 		@media all and (min-width: $lg) {
-			font-size: 38px;
-			line-height: 48px;
+			font-size: 33px;
+			line-height: 40px;
 			margin-bottom: 60px;
 			margin-top: 0;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 38px;
+			line-height: 48px;
 		}
 	}
 
@@ -130,10 +135,15 @@
 		
 
 		@media all and (min-width: $lg) {
-			font-size: 38px;
-			line-height: 48px;
+			font-size: 33px;
+			line-height: 40px;
 			max-width: 637px;
 			text-align: left;
+		}
+
+		@media all and (min-width: $xl) {
+			font-size: 38px;
+			line-height: 48px;
 		}
 
 		.italic {

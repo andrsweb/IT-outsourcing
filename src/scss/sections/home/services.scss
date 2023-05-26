@@ -1,8 +1,22 @@
 .services {
-	padding: 195px 0 100px;
+	padding: 50px 0;
+
+	@media all and (min-width: $xxl) {
+		padding: 195px 0 100px;
+	}
 
 	h2 {
-		margin-bottom: 75px;
+		max-width: 280px;
+		margin: 0 auto 45px auto;
+
+		@media all and (min-width: $md) {
+			margin: 0;
+			margin-bottom: 75px;
+		}
+
+		@media all and (min-width: $lg) {
+			max-width: 350px;
+		}
 	}
 
 	&-rect {
@@ -10,28 +24,48 @@
 		position: absolute;
 		left: -41%;
 		top: -55%;
+		z-index: -1;
 
-		@media all and (min-width: $lg) {
+		@media all and (min-width: $xxl) {
 			display: block;
 		}
 	}
 
 	&-wrapper {
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		position: relative;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+		}
 	}
 
 	&-img {
-		width: 50%;
+		width: 100%;
 		display: flex;
-		justify-content: flex-start;
-		padding-top: 30px;
-		padding-left: 50px;
+		justify-content: center;
+		order: 2;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+			padding-top: 30px;
+			padding-left: 50px;
+			justify-content: flex-start;
+			order: 1;
+		}
 	}
 
 	&-info {
-		width: 50%;
+		order: 1;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+		}
 	}
 
 	&-desc {
