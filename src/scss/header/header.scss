@@ -27,6 +27,10 @@
 				}
 			}
 		}
+
+		.wrapper {
+			margin-top: 810px;
+		}
 	}
 
 	&-wrapper {
@@ -95,12 +99,4 @@
 			margin-right: 0;
 		}
 	}
-}
-
-.header-star {
-	position: absolute;
-	right: -3%;
-	top: 0;
-	transform: translateY( -40%);
-	z-index: -1;
 }

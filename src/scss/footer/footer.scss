@@ -22,7 +22,22 @@
 	}
 
 	&-col {
+		display: flex;
+		flex-direction: column;
 		width: 33.333%;
+
+		&:last-child {
+			align-items: flex-end;
+		}
+
+		&.col-center {
+			align-items: center;
+		}
+	}
+
+	&-contacts {
+		width: 100%;
+		max-width: 222px;
 	}
 
 	&-messenger {
@@ -46,6 +61,7 @@
 		line-height: 26px;
 		letter-spacing: 0.7px;
 		color: $light;
+		margin-top: 26px;
 	}
 
 	&-address {

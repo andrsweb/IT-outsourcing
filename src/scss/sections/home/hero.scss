@@ -1,9 +1,17 @@
 .hero {
-	padding: 246px 0 100px;
+	padding: 357px 0 100px;
 
 	&-wrapper {
+		position: relative;
 		display: flex;
 		margin-top: 52px;
+	}
+
+	.header-star {
+		position: absolute;
+		right: -21%;
+		top: -330%;
+		z-index: -1;
 	}
 
 	h4 {

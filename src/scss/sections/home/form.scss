@@ -64,10 +64,6 @@
 		}
 	}
 
-	.input-item {
-		display: flex;
-	}
-
 	label {
 		font-family: $ff;
 		font-style: normal;
@@ -98,44 +94,6 @@
 			font-size: 16px;
 			line-height: 24px;
 			color: $gray;
-		}
-	}
-
-	.input-item {
-		position: relative;
-	}
-
-	.input-dropdown {
-		cursor: pointer;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-family: $ff;
-		font-style: normal;
-		font-weight: $fw-regular;
-		font-size: 16px;
-		line-height: 24px;
-		color: $black;
-		width: 73px;
-		padding-right: 20px;
-		height: calc( 100% - 2px );
-		position: absolute;
-		left: 1px;
-		top: 1px;
-		background-color: $white;
-		border-radius: 8px;
-
-		&::before {
-			content: "";
-			width: 7px;
-			height: 7px;
-			display: block;
-			border-right: 2px solid $gray;
-			border-bottom: 2px solid $gray;
-			position: absolute;
-			right: 15px;
-			top: 37%;
-			transform: rotate( 45deg);
 		}
 	}
 
