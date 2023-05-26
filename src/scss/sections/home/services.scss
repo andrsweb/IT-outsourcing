@@ -1,0 +1,40 @@
+.services {
+	padding: 195px 0 100px;
+
+	h2 {
+		margin-bottom: 75px;
+	}
+
+	&-rect {
+		position: absolute;
+		left: -41%;
+		top: -55%;
+	}
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+
+	&-img {
+		width: 50%;
+		display: flex;
+		justify-content: flex-start;
+		padding-top: 30px;
+		padding-left: 50px;
+	}
+
+	&-info {
+		width: 50%;
+	}
+
+	&-desc {
+		font-family: $ff;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 16px;
+		line-height: 24px;
+		color: $black;
+	}
+}
