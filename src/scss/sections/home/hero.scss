@@ -1,5 +1,5 @@
 .hero {
-	padding: 150px 0 50px;
+	padding: 120px 0 50px;
 
 	@media all and (min-width: $xxl) {
 		padding: 357px 0 100px;
@@ -95,6 +95,17 @@
 		left: -2%;
 		top: 14%;
 		z-index: -1;
+		animation: rotate infinite linear 30s;
+
+		@keyframes rotate {
+			0% {
+				transform: rotate( 0 );
+			}
+
+			100% {
+				transform: rotate( 360deg );
+			}
+		}
 
 		@media all and (min-width: $xl) {
 			display: block;
@@ -110,12 +121,14 @@
 		color: $black;
 		margin-bottom: 30px;
 		margin-top: 30px;
+		text-align: center;
 
 		@media all and (min-width: $lg) {
 			font-size: 33px;
 			line-height: 40px;
 			margin-bottom: 60px;
 			margin-top: 0;
+			text-align: left;
 		}
 
 		@media all and (min-width: $xl) {

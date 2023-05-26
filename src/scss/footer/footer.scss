@@ -23,6 +23,17 @@
 		left: 10%;
 		top: -335%;
 		z-index: -1;
+		animation: rotate infinite linear 40s;
+
+		@keyframes rotate {
+			0% {
+				transform: rotate( 0 );
+			}
+
+			100% {
+				transform: rotate( 360deg );
+			}
+		}
 
 		@media all and (min-width: $xxl) {
 			display: block;
