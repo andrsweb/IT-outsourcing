@@ -1,0 +1,101 @@
+.footer {
+	background-color: $blue;
+	padding: 61px 0 112px;
+
+	&-wrapper {
+		display: flex;
+	}
+
+	&-logo {
+		display: flex;
+		align-items: center;
+		max-width: 140px;
+	}
+
+	&-col {
+		width: 33.333%;
+	}
+
+	&-messenger {
+		font-family: $ff-inter;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 26px;
+		display: flex;
+		align-items: center;
+		letter-spacing: 0.7px;
+		color: $light;
+		margin-bottom: 21px;
+	}
+
+	&-rights {
+		font-family: $ff-inter;
+		font-style: normal;
+		font-weight: $ff-inter;
+		font-size: 14px;
+		line-height: 26px;
+		letter-spacing: 0.7px;
+		color: $light;
+	}
+
+	&-address {
+		font-family: $ff-inter;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 14px;
+		line-height: 26px;
+		letter-spacing: 0.7px;
+		color: $light;
+
+		&-wrapper {
+			display: flex;
+			flex-direction: column;
+			margin-left: 17px;
+		}
+	}
+
+	&-email, &-phone {
+		font-family: $ff-inter;
+		font-style: normal;
+		font-weight: $fw-regular;
+		font-size: 14px;
+		line-height: 26px;
+		display: flex;
+		align-items: center;
+		letter-spacing: 0.7px;
+		color: $light;
+
+		a {
+			color: $yellow;
+			margin-left: 10px;
+		}
+	}
+
+	address {
+		display: flex;
+	}
+
+	&-links {
+		display: flex;
+	}
+
+	&-link {
+		margin-right: 39px;
+
+		&:first-child {
+			svg path {
+				fill: $white;
+				stroke: $blue;
+			}
+
+			svg  {
+				fill: red;
+			}
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}

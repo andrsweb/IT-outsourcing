@@ -1,5 +1,5 @@
 .contact {
-	padding: 185px 0 100px;
+	padding: 185px 0 315px;
 
 	&-wrapper {
 		display: flex;
@@ -15,9 +15,9 @@
 	}
 
 	&-subtitle {
-		font-family: 'Plus Jakarta Sans';
+		font-family: $ff;
 		font-style: normal;
-		font-weight: 400;
+		font-weight: $fw-regular;
 		font-size: 20px;
 		line-height: 30px;
 		color: $gray;
