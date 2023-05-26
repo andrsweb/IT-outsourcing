@@ -69,6 +69,14 @@
 			display: flex;
 		}
 
+		@media all and (min-width: $xl) {
+			width: calc( 100% - 186px );
+		}
+
+		@media all and (min-width: $xxl) {
+			width: calc( 100% - 310px );
+		}
+
 		&.opened {
 			animation: anim forwards ease 0.5s;
 			overflow-y: auto;
