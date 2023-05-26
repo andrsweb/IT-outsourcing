@@ -1,3 +1,6 @@
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+import { setTargetElement, getTargetElement } from './common/global'
+
 document.addEventListener( 'DOMContentLoaded', () => {
 	'use strict'
 
@@ -24,6 +27,7 @@ const headerScroll = () => {
 const toggleBurgerMenu = () => {
 	const burgerButton  = document.querySelector( '.burger-button' )
 	const burgerMenu    = document.querySelector( '.header-ui-wrapper' )
+	setTargetElement( document.querySelector( '#body-lock' ) )
 
 	if( ! burgerButton || ! burgerMenu ) return
 
@@ -34,12 +38,12 @@ const toggleBurgerMenu = () => {
 		if( ! burgerMenu.classList.contains( 'opened' ) ) {
 			burgerMenu.classList.add( 'opened' )
 			burgerButton.classList.add( 'active' )
-			// disableBodyScroll( getTargetElement(), { reserveScrollBarGap: true } )
+			disableBodyScroll( getTargetElement(), { reserveScrollBarGap: true } )
 
 		} else {
 			burgerMenu.classList.remove( 'opened' )
 			burgerButton.classList.remove( 'active' )
-			// enableBodyScroll( getTargetElement() )
+			enableBodyScroll( getTargetElement() )
 		}
 	} )
 
@@ -55,6 +59,7 @@ const toggleBurgerMenu = () => {
 
 		burgerMenu.classList.remove( 'opened' )
 		burgerButton.classList.remove( 'active' )
+		enableBodyScroll( getTargetElement() )
 	} )
 
 	window.addEventListener( 'resize', () => {
@@ -64,6 +69,7 @@ const toggleBurgerMenu = () => {
 		if( windowWidth >= WINDOW_WIDTH_MD &&  burgerMenu.classList.contains( 'opened' ) ) {
 			burgerMenu.classList.remove( 'opened' )
 			burgerButton.classList.remove( 'active' )
+			enableBodyScroll( getTargetElement() )
 		}
 	} )
 }

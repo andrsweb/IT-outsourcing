@@ -35,6 +35,7 @@
     position: relative;
     transition: $tr;
     cursor: pointer;
+	z-index: 100;
     
     @media all and (min-width: $md) {
 		display: none;
@@ -91,41 +92,3 @@
             }
         }
 	}
-
-.close-button {
-	width: 30px;
-	height: 30px;
-	position: relative;
-	background-color: transparent;
-	cursor: pointer;
-	transition: opacity ease $tr;
-	margin-bottom: 20px;
-
-	&:hover {
-		opacity: $op;
-	}
-
-	&::before {
-		content: "";
-		display: block;
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 2px;
-		background-color: $black;
-		transform: rotate(45deg);
-	}
-
-	&::after {
-		content: "";
-		display: block;
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 2px;
-		background-color: $black;
-		transform: rotate(-45deg);
-	}
-}
