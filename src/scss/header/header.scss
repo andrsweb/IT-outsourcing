@@ -1,18 +1,14 @@
 .header {
 	padding: 32px 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
 
 	&-wrapper {
 		display: flex;
 		align-items: center;
-		position: relative;
-
-		.header-star {
-			position: absolute;
-			right: -21%;
-			top: 0;
-			transform: translateY( -44%);
-			z-index: -1;
-		}
 	}
 
 	&-logo {
@@ -70,4 +66,12 @@
 			margin-right: 0;
 		}
 	}
+}
+
+.header-star {
+	position: absolute;
+	right: -3%;
+	top: 0;
+	transform: translateY( -40%);
+	z-index: -1;
 }
