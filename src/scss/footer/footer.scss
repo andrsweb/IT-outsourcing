@@ -1,9 +1,18 @@
 .footer {
 	background-color: $blue;
 	padding: 61px 0 112px;
+	position: relative;
 
 	&-wrapper {
 		display: flex;
+		position: relative;
+	}
+
+	&-img {
+		position: absolute;
+		left: 7%;
+		top: -366%;
+		z-index: -1;
 	}
 
 	&-logo {
