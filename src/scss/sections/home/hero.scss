@@ -1,17 +1,32 @@
 .hero {
-	padding: 357px 0 100px;
+	padding: 150px 0 50px;
+
+	@media all and (min-width: $xxl) {
+		padding: 357px 0 100px;
+	}
 
 	&-wrapper {
 		position: relative;
 		display: flex;
-		margin-top: 52px;
+		flex-direction: column;
+		margin-top: 32px;
+
+		@media all and (min-width: $lg) {
+			flex-direction: row;
+			margin-top: 52px;
+		}
 	}
 
 	.header-star {
+		display: none;
 		position: absolute;
 		right: -21%;
 		top: -335%;
 		z-index: -1;
+
+		@media all and (min-width: $lg) {
+			display: block;
+		}
 	}
 
 	h4 {
@@ -19,13 +34,26 @@
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-regular;
-		font-size: 56px;
-		line-height: 71px;
+		font-size: 26px;
+		line-height: 31px;
 		color: $black;
 		position: relative;
-		max-width: 338px;
+		max-width: 180px;
 		margin-left: auto;
 		margin-right: 14%;
+		text-align: center;
+
+		@media all and (min-width: $md) {
+			font-size: 35px;
+			line-height: 40px;
+			max-width: 250px;
+		}
+
+		@media all and (min-width: $lg) {
+			max-width: 338px;
+			font-size: 56px;
+			line-height: 71px;
+		}
 
 		&::before {
 			content: "";
@@ -40,44 +68,73 @@
 	}
 
 	&-left {
-		width: 50%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
-		padding-top: 30px;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+			padding-top: 30px;
+		}
 	}
 
 	&-right {
 		position: relative;
-		width: 50%;
-		padding-top: 140px;
-		padding-left: 85px;
+		width: 100%;
+
+		@media all and (min-width: $lg) {
+			width: 50%;
+			padding-top: 140px;
+			padding-left: 85px;
+		}
 	}
 
 	&-star {
+		display: none;
 		position: absolute;
 		left: -2%;
 		top: 14%;
 		z-index: -1;
+
+		@media all and (min-width: $lg) {
+			display: block;
+		}
 	}
 
 	&-desc {
 		font-family: $ff;
 		font-style: italic;
 		font-weight: $fw-light;
-		font-size: 38px;
-		line-height: 48px;
+		font-size: 20px;
+		line-height: 25px;
 		color: $black;
-		margin-bottom: 60px;
+		margin-bottom: 30px;
+		margin-top: 30px;
+
+		@media all and (min-width: $lg) {
+			font-size: 38px;
+			line-height: 48px;
+			margin-bottom: 60px;
+			margin-top: 0;
+		}
 	}
 
 	&-text {
 		font-family: $ff;
 		font-style: normal;
 		font-weight: $fw-regular;
-		font-size: 38px;
-		line-height: 48px;
+		font-size: 20px;
+		line-height: 25px;
 		color: $black;
-		max-width: 637px;
+		text-align: center;
+		
+
+		@media all and (min-width: $lg) {
+			font-size: 38px;
+			line-height: 48px;
+			max-width: 637px;
+			text-align: left;
+		}
 
 		.italic {
 			font-style: italic;
@@ -89,6 +146,15 @@
 	}
 
 	&-buttons {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+
+		@media all and (min-width: $lg) {
+			margin-bottom: 0;
+			justify-content: flex-start;
+		}
+
 		.button.yellow {
 			margin-right: 24px;
 		}

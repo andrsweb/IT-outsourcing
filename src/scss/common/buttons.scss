@@ -6,10 +6,14 @@
 	line-height: 24px;
 	text-align: center;
 	color: $black;
-	padding: 10px 50px;
+	padding: 10px 20px;
 	border-radius: $border;
 	cursor: pointer;
 	transition: opacity ease $tr;
+
+	@media all and (min-width: $md) {
+		padding: 10px 50px;
+	}
 
 	&:hover {
 		opacity: $op;
